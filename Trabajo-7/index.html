@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Trabajo 7</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <form action="userpage.html" method="get">
+        <label>Nombre: </label><input type="text" name="name"><br>
+        <label>Apellidos: </label><input type="text" name="apes"><br>
+        <label>Correo: </label><input type="email" name="correo"><br>
+        <label>Fecha de nacimiento: </label><input type="date" name="bday"><br>
+        <label>Telefono: </label> <input type="tel" name="phone"><br>
+        <label>Usuario: </label><input type="text" name="user"><br>
+        <label>Contraseña: </label><input type="password" name="pass"><br>
+        <label>Repetir Contraseña: </label><input type="password" name="repass"><br>
+        <input type="submit" value="Continuar">
+    </form>
+    <script>
+        function passcurity() {
+            var contra = (document.getElementById("contraseña").value);
+            if (contra.length < 5){
+                alert("CUIDADO!!!! tu contraseña tiene menos de 5 caracteres, es muy insegura");
+            } else {
+                alert ("contraseña segura")
+            }
+        }
+    </script>
+</body>
+</html>
